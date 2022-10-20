@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div class="glider-contain multiple">
+        <button class="glider-prev">
+            <i class="fa fa-chevron-left"></i>
+        </button>
+        <div class="glider">
+            <figure>
+                <blockquote>Lorem ipsum dolor sit amet.</blockquote>
+                <figcaption>jogon doe</figcaption>
+            </figure>
+            <figure>
+                <blockquote>Lorem 321 31</blockquote>
+                <figcaption>jogon welesi</figcaption>
+            </figure>
+            <figure>
+                <blockquote>Lorem asdf asdf asd f321</blockquote>
+                <figcaption>jogon 1</figcaption>
+            </figure>
+            <figure>
+                <blockquote>Lorem asdf 111 132a1sdf  dfsa</blockquote>
+                <figcaption>jogon 2</figcaption>
+            </figure>
+            <figure>
+                <blockquote>Lorem asdf 21321 </blockquote>
+                <figcaption>jogon 3</figcaption>
+            </figure>
+            <figure>
+                <blockquote>Lorem asdf  </blockquote>
+                <figcaption>jogon 5</figcaption>
+            </figure>
+        </div>
+
+        <button class="glider-next">
+            <i class="fa fa-chevron-right"></i>
+        </button>
+
+        <div id="dots" class="glider-dots"></div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.js"></script>
+    <script>
+        new Glider(document.querySelector('.glider'),{
+            slidesToShow:1,
+            draggable: true,
+            dots: '#dots',
+            arrows: {
+                prev: '.glider-prev',
+                next: '.glider-next'
+            }
+        });
+    </script>
+</body>
+</html>
